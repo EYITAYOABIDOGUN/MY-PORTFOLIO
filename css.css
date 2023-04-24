@@ -17,6 +17,15 @@
   .icons {
     display: none;
   }
+  #desk {
+    display: none;
+  }
+  .sidenav li {
+    margin-bottom: 20px;
+  }
+  .icons1 {
+    margin: 10px;
+  }
   .projects {
     flex-direction: column;
   }
@@ -27,6 +36,13 @@
     width: 100%;
     position: absolute;
     top: 359px;
+  }
+  .name {
+    padding: 0;
+    height: 300px;
+  }
+  span > h1 {
+    font-size: 39px;
   }
   .project1 {
     height: 100%;
@@ -50,7 +66,7 @@
     padding-top: 60px;
   }
   .sidenav ul {
-    padding: 8px 8px 8px 32px;
+    padding: 20px 10px 8px 32px;
     display: flex;
     flex-direction: column;
     font-size: 20px;

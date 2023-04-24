@@ -10,12 +10,23 @@
   --plant-green: hsl(131, 22%, 29%);
   --gold: hsl(46, 100%, 62%);
   --homepage-yellow: hsl(40, 99%, 61%);
+  --russian-purple: hsl(270, 54%, 20%);
 }
 .logo h1 {
   /* font-family: "Tenor Sans", sans-serif; */
   /* text-transform: lowercase; */
   font-family: "Pacifico", cursive;
 }
+.header h1 {
+  background: -webkit-linear-gradient(
+    45deg,
+    hsl(270, 54%, 20%),
+    hsl(40, 99%, 61%) 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .header {
   display: flex;
   padding: 10px;
@@ -34,33 +45,47 @@
   /* margin-right: 30px; */
 }
 
-.header li {
-  margin-right: 30px;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: "Dancing Script", cursive;
+.header a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--russian-purple);
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
 }
-.header li:hover {
-  text-decoration: underline;
+.header a:after {
+  content: "";
+  position: absolute;
+  background-color: var(--homepage-yellow);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.header a:hover {
   color: var(--homepage-yellow);
 }
-
+.header a:hover:after {
+  width: 100%;
+}
 .Home {
   width: 100%;
   text-align: start;
-
   height: 100%;
+  /* height: 300px; */
 }
 .name {
-  background-color: hsl(270, 54%, 20%);
+  background-color: var(--russian-purple);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 400px;
 }
 i {
-  color: hsl(270, 54%, 20%);
+  color: var(--russian-purple);
   font-size: 20px;
 }
 i:hover {
@@ -69,15 +94,32 @@ i:hover {
 #background {
   width: 100%;
   position: absolute;
-  top: 359px;
+  top: 459px;
 }
 
 #name {
   color: var(--homepage-yellow);
-  font-family: "Vibes", cursive;
+  font-family: "Pacifico", cursive;
   font-size: 30px;
 }
-
+.vector {
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.vector img {
+  color: black;
+  width: 100%;
+  width: 500px;
+  position: absolute;
+  right: 150px;
+  bottom: 51px;
+}
+.name {
+  display: flex;
+  padding-right: 550px;
+}
 #greet {
   margin-right: 20px;
   color: black;
@@ -85,7 +127,10 @@ i:hover {
 #job {
   font-family: "Pacifico", cursive;
 }
-
+#desk {
+  width: 30%;
+  border: 13px solid var(--homepage-yellow);
+}
 #download {
   background-color: var(--homepage-yellow);
   margin-top: 20px;
@@ -96,7 +141,10 @@ i:hover {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
+
 .about {
   margin-top: 150px;
 }
@@ -124,10 +172,11 @@ i:hover {
   justify-content: center;
   width: 150px;
   height: 40px;
-  background-color: hsl(270, 54%, 20%);
+  background-color: var(--russian-purple);
   text-align: center;
   color: white;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 #btn {
   display: flex;
@@ -145,7 +194,7 @@ i:hover {
   margin-right: 10px;
 }
 .project-name a:hover {
-  color: hsl(270, 54%, 20%);
+  color: var(--russian-purple);
 }
 .code {
   margin-top: 5px;
@@ -169,7 +218,7 @@ i:hover {
   width: 100%;
 }
 .about h1 {
-  color: hsl(270, 54%, 20%);
+  color: var(--russian-purple);
   margin: 20px;
 }
 .about p {
@@ -177,7 +226,15 @@ i:hover {
   font-size: 15px;
   margin: 20px;
 }
-
+.goal h1 {
+  background: -webkit-linear-gradient(
+    45deg,
+    hsl(40, 99%, 61%),
+    hsl(270, 54%, 20%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #wave3 {
   position: absolute;
   width: 100%;
@@ -196,7 +253,7 @@ i:hover {
 }
 .icons1 p {
   margin-bottom: 10px;
-  color: hsl(270, 54%, 20%);
+  color: var(--russian-purple);
 }
 .foot {
   width: 100%;
@@ -215,4 +272,7 @@ i:hover {
 #opts {
   width: 100%;
   position: absolute;
+}
+.info h1 {
+  color: var(--russian-purple);
 }
