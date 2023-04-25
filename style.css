@@ -160,6 +160,9 @@ i:hover {
   border-radius: 20px;
   border: 1px solid grey;
 }
+.project1 img:hover {
+  opacity: 0.5;
+}
 .project1 {
   border-radius: 20px;
   height: 100%;
