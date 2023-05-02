@@ -8,20 +8,23 @@
 :root {
   --plant-pink: hsl(12, 100%, 82%);
   --plant-green: hsl(131, 22%, 29%);
+  --green: #ffe3dc;
   --gold: hsl(46, 100%, 62%);
   --homepage-yellow: hsl(40, 99%, 61%);
   --russian-purple: hsl(270, 54%, 20%);
 }
+
 .logo h1 {
   /* font-family: "Tenor Sans", sans-serif; */
   /* text-transform: lowercase; */
   font-family: "Pacifico", cursive;
 }
+
 .header h1 {
   background: -webkit-linear-gradient(
     45deg,
-    hsl(270, 54%, 20%),
-    hsl(40, 99%, 61%) 80%
+    var(--russian-purple),
+    var(--homepage-yellow) 80%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -88,7 +91,7 @@ i {
   color: var(--russian-purple);
   font-size: 20px;
 }
-i:hover {
+.icons i:hover {
   color: var(--homepage-yellow);
 }
 #background {
@@ -118,11 +121,20 @@ i:hover {
 }
 .name {
   display: flex;
-  padding-right: 550px;
+  /* padding-right: 550px; */
 }
 #greet {
   margin-right: 20px;
   color: black;
+}
+.im img {
+  width: 300px;
+}
+.im {
+  position: absolute;
+  z-index: 4;
+  padding-right: 40px;
+  right: 0;
 }
 #job {
   font-family: "Pacifico", cursive;
@@ -152,7 +164,54 @@ i:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--green);
+}
+.skills {
+  height: 560px;
+  padding-bottom: 40px;
+  padding: 100px;
+  background-color: var(--russian-purple);
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  margin-top: 20px;
+}
+.skills span {
+  width: 200px;
+  height: 200px;
   background-color: var(--homepage-yellow);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills h1 {
+  font-family: "Pacifico", cursive;
+  background: var(--homepage-yellow);
+  color: var(--russian-purple);
+  padding: 20px;
+  border-radius: 20px;
+}
+.skil {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  background: var(--russian-purple);
+  padding: 40px;
+}
+.skil h2 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+svg {
+  position: absolute;
+  width: 100%;
+}
+.h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project1 img {
   width: 100%;
@@ -185,7 +244,8 @@ i:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--homepage-yellow);
+  background-color: var(--green);
+  padding: 40px 0;
 }
 .project-name {
   margin-top: 5px;
@@ -232,8 +292,8 @@ i:hover {
 .goal h1 {
   background: -webkit-linear-gradient(
     45deg,
-    hsl(40, 99%, 61%),
-    hsl(270, 54%, 20%)
+    var(--homepage-yellow),
+    var(--russian-purple)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -258,24 +318,38 @@ i:hover {
   margin-bottom: 10px;
   color: var(--russian-purple);
 }
+.icons p:hover {
+  color: var(--russian-purple);
+}
 .foot {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 160px;
-  padding: 100px;
+  justify-content: space-evenly;
+  /* margin-top: 160px; */
+  padding-top: 200px;
+  padding-bottom: 50px;
+  background-color: var(--homepage-yellow);
+  color: var(--russian-purple);
 }
 .logo,
 .info,
 .icon1 {
-  margin-right: 100px;
+  text-align: start;
 }
-
+.mail {
+  margin-bottom: 10px;
+}
 #opts {
   width: 100%;
   position: absolute;
 }
 .info h1 {
   color: var(--russian-purple);
+}
+.abou li {
+  font-weight: 300;
+  font-family: "Tenor Sans", sans-serif;
+  margin-bottom: 10px;
+  text-align: start;
 }
