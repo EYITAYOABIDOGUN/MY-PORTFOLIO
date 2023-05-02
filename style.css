@@ -179,7 +179,7 @@ i {
   width: 200px;
   height: 200px;
   background-color: var(--homepage-yellow);
-  border-radius: 100%;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,9 +204,11 @@ i {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
 }
+
 svg {
   position: absolute;
   width: 100%;
+  /* top: 1370px; */
 }
 .h {
   display: flex;
